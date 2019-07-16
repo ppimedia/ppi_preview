@@ -1,5 +1,5 @@
 {
-    "name": "donaldoducko/ppi-print-preview-github",
+    "name": "donaldoducko/ppi_preview",
     "description": "Displays a preview for print articles.",
     "type": "drupal-module",
     "license": "GPL-2.0-or-later",
