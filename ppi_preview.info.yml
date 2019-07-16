@@ -1,7 +1,7 @@
 name: PPI Preview Module
 description: Displays a preview for print articles
 configure: ppi_preview.settings
-package: PPI
+package: PPI2
 
 type: module
 core: 8.x
