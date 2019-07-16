@@ -1,0 +1,10 @@
+ppi_preview_expand:
+  version: 1.0
+  css:
+    theme:
+      css/ppi_preview_expand.css: {}
+  js:
+    js/ppi_preview_expand.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -1,0 +1,7 @@
+ppi_preview.settings:
+    path: '/admin/config/ppi-preview-url'
+    defaults:
+        _form: '\Drupal\ppi_preview\Form\PreviewUrlConfigurationForm'
+        _title: 'PPI Preview Settings'
+    requirements:
+        _permission: 'administer site configuration'

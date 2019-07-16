@@ -1,0 +1,5 @@
+ppi_preview.settings:
+  title: 'PPI Preview Settings'
+  description: 'Configure the PPI Preview module.'
+  parent: system.admin_config_system
+  route_name: ppi_preview.settings

@@ -1,0 +1,9 @@
+{
+    "name": "donaldoducko/ppi-print-preview-github",
+    "description": "Displays a preview for print articles.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.0.0"
+    }
+}
