@@ -1,2 +1,2 @@
-# ppi-print-preview-github
+# ppi_preview
 Displays a preview for print articles ...
