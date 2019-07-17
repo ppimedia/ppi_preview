@@ -4,7 +4,7 @@ To install this module, please:
 
 ```
 cd /path/to/your/drupal-or-thunder/root/directory # e.g. /var/www/thunder
-composer require composer require donaldoducko/ppi_preview:0.1
+composer require donaldoducko/ppi_preview:0.1
 drush en ppi_preview
 ```
 
