@@ -30,6 +30,7 @@ function ppi_preview_form_alter(&$form, FormStateInterface $form_state, $form_id
         $config_factory = \Drupal::configFactory();
         $config = $config_factory->getEditable('ppi_preview.settings');
         $idWrapperBaseUrl = $config->get('preview_url');
+        $apiKey = $config->get('api_key');
         //\Drupal::logger('ppi_preview')->notice($idWrapperBaseUrl);
 
         $form['ppi_preview'] = [
@@ -42,7 +43,7 @@ function ppi_preview_form_alter(&$form, FormStateInterface $form_state, $form_id
         ];
         $form['ppi_preview']['preview'] = [
             '#theme' => 'image',
-            '#uri' => $idWrapperBaseUrl . '?id=' . $entity->uuid(),
+            '#uri' => $idWrapperBaseUrl . '?id=' . $entity->uuid() . '&key=' . $apiKey,
             '#style_name' => 'large',
             '#title' => t('ppi print preview'),
             '#attributes' => [ 'id' => 'ppi-preview-id' ],

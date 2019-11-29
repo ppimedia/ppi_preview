@@ -34,7 +34,13 @@ class PreviewUrlConfigurationForm extends ConfigFormBase {
       '#description' => $this->t('This is the base url to get the preview image from'),
       '#default_value' => $config->get('preview_url'),
     );
-
+    $form['api_key'] = array(
+        '#type' => 'textfield',
+        '#title' => $this->t('Api Key'),
+        '#description' => $this->t('The apikey to use when requesting preview images'),
+        '#default_value' => $config->get('api_key'),
+    );
+    
     return parent::buildForm($form, $form_state);
   }
 
@@ -42,7 +48,7 @@ class PreviewUrlConfigurationForm extends ConfigFormBase {
     * {@inheritdoc}
     */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->config('ppi_preview.settings')->set('preview_url', $form_state->getValue('preview_url'))->save();
+      $this->config('ppi_preview.settings')->set('preview_url', $form_state->getValue('preview_url'))->set('api_key', $form_state->getValue('api_key'))->save();
     parent::submitForm($form, $form_state);
   }
 }
